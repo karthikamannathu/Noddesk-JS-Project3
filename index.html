@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Project</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
    <main>
@@ -17,35 +18,41 @@
    <button>Quiz</button>
     <div class="quiz_builder_block">
      <i class="bi bi-x"></i>
-     <div class="basic_info">
-      <label for="label"> Basic Info</label>
-        <input type="text" id="title" placeholder="Quiz Title">
+     
+      
+      <div class="basic_info">
+         <label for="label" class="basic_label"> Basic Info</label>
+         <div class="input_grid">
+             <input type="text" id="title" placeholder="Quiz Title">
         <select id="categorey" >
                 <option value="Gjjiji">General Knowledge </option>
                 <option value="bnjj">hhuhuh</option>
          </select>
-         <input type="number" class="time_limit" placeholder="timengyg">
+         <input type="number" class="time_limit" placeholder="Time Limit">
          <input type="text" id="description" placeholder=" Short Description">
+         </div>
      </div>
 
-     <div class="qns_block">
-        <label>QUESTION TEXT
-        <input type="text" id="qustion_text"></label>
+     <div class="qns_block"> 
+       <i class="bi bi-trash3"></i>
+        <label>QUESTION TEXT</label>
+        <input type="text" id="qustion_text" class="input_box">
         <div class="optn_condiner">
-        <input type="radio" name="option"  value="option1"> <label> Option 1</label>
-        <input type="radio" name="option"  value="option2"> <label> Option 2</label>
-        <input type="radio" name="option"  value="option3"> <label> Option 3</label>
-        <input type="radio" name="option"  value="option4"> <label> Option 4</label>
+       <input type="radio" name="option"  id ="option1" /> <input type="text" id ='option1' placeholder=" Option1"/>
+        <input type="radio" name="option"  id="option2"/><input type="text" id ='option2'placeholder=" Option2"/>
+        <input type="radio" name="option"  id="option3"/><input type="text" id ='option3'placeholder=" Option3"/>
+        <input type="radio" name="option"  id="option4"/><input type="text" id ='option4'placeholder=" Option4"/>
         </div>
-        <label>EXAMNATION (OPTIONAL)
-        <input type="text" class="input_box"></label>
-        <label>TAGS
-        <input type="text" class="input_box" placeholder="Math,Logic"></label>
-     </div>
-
+        <div class="Flex_box">
+        <label>EXAMNATION (OPTIONAL)</label>
+        <input type="text" class="input_box">
+        <label>TAGS</label>
+        <input type="text" class="input_box" placeholder="Math,Logic">
+       </div>
 
     </div>
     <Button id="add_quns">+ Add Qustion </Button>
+    </div>
    </section>
 
 

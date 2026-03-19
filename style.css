@@ -1,5 +1,60 @@
 .input_pannel{
-    background-color: blue;
+    background-color: rgb(193, 193, 246);
     width: 800px;
-    height: 1000vh;
+    height: 150vh;
+}
+
+.quiz_builder_block{
+    height: 400px;
+    background-color: beige;
+    width: 550px;
+    display: none;
+}
+
+.basic_info{
+    width: 80px;
+    height: 150px;   
+}
+
+.input_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.bi-x{
+    float: right;
+}
+
+label{
+  font-size:12px;  
+}
+.bi-trash3{
+   align-self: flex-end;
+}
+.qns_block{
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+}
+
+.optn_condiner{
+    margin: 15px;
+width: 330px;
+display: grid;
+  grid-template-columns: auto auto auto auto;
+row-gap: 10px;
+
+}
+
+.input_box{
+    width: 160px;
+}
+
+#qustion_text{
+width: auto;
+}
+.flex_box{
+    display:flex;
+    flex-direction: row;
 }
